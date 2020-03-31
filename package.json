@@ -9,6 +9,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "gsap": "^3.2.5",
+    "lodash.debounce": "^4.0.8",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5"
   },

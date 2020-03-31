@@ -9,6 +9,9 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
+    meta: {
+      title: 'Swisher - Get NBA teams stats',
+    },
   },
   {
     path: '/about',
@@ -19,11 +22,14 @@ const routes = [
     component() {
       return import(/* webpackChunkName: "about" */ '../views/About.vue');
     },
+    meta: {
+      title: 'Swisher - Get NBA teams stats',
+    },
   },
 ];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes,
 });
